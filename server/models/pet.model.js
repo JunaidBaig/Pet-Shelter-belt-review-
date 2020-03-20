@@ -16,7 +16,9 @@ const PetSchema = new mongoose.Schema({
         required:[true, "Must have pet description"],
         minlength: [3, "Description needs to be longer than 3 letters"]
     },
-    skill:[]
+    skill1:String,
+    skill2:String,
+    skill3:String
 },{timestamps:true})
 
 const Pet = mongoose.model("Pet", PetSchema)

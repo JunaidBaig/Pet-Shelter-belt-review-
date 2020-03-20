@@ -30,6 +30,11 @@ const Update = ({id}) => {
         axios.put("http://localhost:8000/api/pets/"+ id + "/edit", petState)
             .then(res =>{
                 console.log(res)
+                setPetState({
+                    name:'',
+                    type:'',
+                    description:''
+                })
                 navigate("/")
             })
             .catch(err => {
@@ -64,15 +69,15 @@ const Update = ({id}) => {
                 </p>
                 <p>
                     Skill 01:
-                    <input  type="text" value={petState.skill} name="skill" onChange={handleChange} className="form-control"/>
+                    <input  type="text" value={petState.skill1} name="skill1" onChange={handleChange} className="form-control"/>
                 </p>
                 <p>
                     Skill 02:
-                    <input  type="text" name="skill" onChange={handleChange} className="form-control"/>
+                    <input  type="text" value={petState.skill2} name="skill2" onChange={handleChange} className="form-control"/>
                 </p>
                 <p>
                     Skill 03:
-                    <input  type="text" name="skill" onChange={handleChange} className="form-control"/>
+                    <input  type="text" value={petState.skill3} name="skill3" onChange={handleChange} className="form-control"/>
                 </p>
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>

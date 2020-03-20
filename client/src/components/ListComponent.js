@@ -3,13 +3,6 @@ import React from 'react'
 import { Link } from '@reach/router';
 
 const ListComponent = ({listState}) =>{
-    // const { removeFromDom } = props;
-    // const deleteAuthor = (authorId) => {
-    //     axios.delete('http://localhost:8000/api/authors/' + authorId)
-    //         .then(res => {
-    //             removeFromDom(authorId)
-    //         })
-    // }
     return(
         <div>
             <table className="table table-dark">

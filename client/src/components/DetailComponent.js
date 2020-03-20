@@ -31,7 +31,11 @@ const DetailComponent = ({removeFromDom,id}) => {
             <div className="jumbotron">
                 <h4>Pet Type: {pet.type}</h4>
                 <h4>Description: {pet.description}</h4>
-                <h4>Skills: {pet.skill}</h4>
+                <h4>
+                    Skills: <h4>{pet.skill1}</h4>
+                    <h4>{pet.skill2}</h4>
+                    <h4>{pet.skill3}</h4>
+                </h4>
             </div>
 
         </div>

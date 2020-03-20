@@ -20,7 +20,10 @@ const CreatePet = ({formState, setFormState}) => {
                 setFormState({
                     name:'',
                     type:'',
-                    description:''
+                    description:'',
+                    skill1:'',
+                    skill2:'',
+                    skill3:''
                 })
                 console.log(formState)
                 navigate("/")
@@ -60,15 +63,15 @@ const CreatePet = ({formState, setFormState}) => {
             </p>
             <p>
                 Skill 01:
-                <input  type="tet" name="skill" onChange={handleChange} className="form-control"/>
+                <input  type="tet" name="skill1" onChange={handleChange} className="form-control"/>
             </p>
             <p>
                 Skill 02:
-                <input  type="text" name="skill" onChange={handleChange} className="form-control"/>
+                <input  type="text" name="skill2" onChange={handleChange} className="form-control"/>
             </p>
             <p>
                 Skill 03:
-                <input  type="text" name="skill" onChange={handleChange} className="form-control"/>
+                <input  type="text" name="skill3" onChange={handleChange} className="form-control"/>
             </p>
             <button type="submit" className="btn btn-primary">Submit</button>
         </form>

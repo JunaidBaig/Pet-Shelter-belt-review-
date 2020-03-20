@@ -11,7 +11,9 @@ function Wrapper() {
         name:'',
         type:'',
         description:'',
-        skill:[]
+        skill1:'',
+        skill2:'',
+        skill3:''
     });
     const [listState, setListState] = useState([])
     useEffect(() =>{
